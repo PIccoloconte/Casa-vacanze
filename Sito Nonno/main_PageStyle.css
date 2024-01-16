@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cinzel+Decorative&family=Quicksand&display=swap');
+
+
+:root{
+    --lightgrayBox : rgba(236, 236, 236, 0.439);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    /*font-family:"Cinzel Decorative" ,sans-serif;*/
+    /*font-family:"Quicksand" ;*/
+}
+
+body{
+    padding: 30px 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+/* icona e titolo */
+header .icon-Title-Btn-Container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header .icon-Title-Container{
+    font-family: 'Calligraffitti', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+header .icon-Title-Container .container_Icon{
+    margin-right: 8px;
+}
+
+header .icon-Title-Container .icon_Link .icon_Img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+header .icon-Title-Container .container_Title .title_Link{
+    text-decoration: none;
+}
+header .icon-Title-Container .container_Title .title_Link .text_Title{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+/* menu */
+header .menu{
+    margin-left: auto;
+}
+header .menu .menu_Btn{
+    padding: 20px;
+    background-color: var(--lightgrayBox);
+    border: 0;
+}
+header .menu .menu_Btn i{
+    font-size: 20px;
+    font-size: medium;
+}
+
+/*menu item */
+.menu_Items_Container{
+    margin: 30px 0;
+}
+
+.menu_Items_Container .menu_Items{
+    list-style: none;
+    padding: 0;
+}
+.menu_Items_Container .menu_Items .item_Menu{
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--lightgrayBox);
+    text-align: left;
+}
+.menu_Items_Container .menu_Items .item_Menu a{
+    font-family:"Cinzel Decorative" ,sans-serif;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 24px;
+    color: black;
+}
