@@ -342,6 +342,7 @@ footer{
     align-items: center;
     color: #bbbbbb;
     padding: 15px 0;
+    position: relative;
 }
 .footerCont--bottom__text p{
     padding: 15px 0;
@@ -410,10 +411,65 @@ footer{
         margin: 10px 0;
     }
    /*PAGINA ITINERARIES SOTTO SEZIONI*/
+    body .btnBackItineraries{
+        display: none;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.437);
+        border-radius: 5px;
+        opacity: 0;
+        color: #fff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    body .btnBackItineraries.active{
+        display: block;
+        opacity: 1;
+    }
 
-   .itineraries__subBox{
 
-   }
+    #itineraries__titleSection{
+        font-family: "Cinzel Decorative" , sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    .itineraries__subBox *{
+        margin-bottom: 20px;
+        font-family: "Roboto" ,sans-serif;
+        word-wrap: break-word;
+        
+    }
+    .itineraries__subBox > *:last-child{
+        padding-bottom: 20px;
+        width: 100%;
+        border-bottom: 1px dashed var(--orangeItem);
+    }
+    .itineraries__subBox h2{
+        font-family: "Cinzel Decorative" , sans-serif;
+        text-transform: lowercase;
+        font-weight: lighter;
+    }
+   .itineraries__subBox a{
+        display: block;
+        text-decoration: none;
+        color: var(--orangeItem);
+    }
+   .itineraries__subBox a i{
+        vertical-align: top;
+        margin-right:10px ;
+    }
+    
+    /*ITINERARIES SPORT*/
+    .itineraries__subBox p > a{
+        color: var(--orangeItem);
+        display: inline-block;
+    }
 
 
 

@@ -3,7 +3,6 @@ const menu = document.querySelector(".menu");
 const toggleMenu = document.querySelector(".mobileLinksCont");
 const btnScrollTop = document.querySelector(".btnScrollTop");
 
-
 // Bottone menu
 menu.addEventListener("click",() => {
     toggleMenu.classList.toggle("showed");
