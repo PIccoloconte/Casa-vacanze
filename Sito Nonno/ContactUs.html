@@ -13,6 +13,8 @@
     <title>Villa Pontappini</title>
 </head>
 <body>
+
+    <!--Rapporto immagini 2,745424292845258 width 1650px heigth 651px-->
     <div class="container">
         <header>
             <div class="headerCont">
@@ -36,10 +38,10 @@
             </div>
             <div class="mobileLinksCont ">
                 <ul class="mobileLinksCont__links">
-                    <li class="mobileLinksCont__links__link ">
+                    <li class="mobileLinksCont__links__link">
                         <a href="home.html">Home</a>
                     </li>
-                    <li class="mobileLinksCont__links__link active">
+                    <li class="mobileLinksCont__links__link ">
                         <a href="location.html">Location</a>
                     </li>
                     <li class="mobileLinksCont__links__link">
@@ -48,17 +50,17 @@
                     <li class="mobileLinksCont__links__link">
                         <a href="food.html">Food</a>
                     </li>
-                    <li class="mobileLinksCont__links__link">
+                    <li class="mobileLinksCont__links__link active">
                         <a href="ContactUs.html">Contact us</a>
                     </li>
                 </ul>
             </div>
             <div class="desktopLinksCont">
                 <ul class="desktopLinksCont__links">
-                    <li class="desktopLinksCont__links__link ">
+                    <li class="desktopLinksCont__links__link">
                         <a href="home.html">Home</a>
                     </li>
-                    <li class="desktopLinksCont__links__link active">
+                    <li class="desktopLinksCont__links__link">
                         <a href="location.html">Location</a>
                     </li>
                     <li class="desktopLinksCont__links__link">
@@ -67,43 +69,48 @@
                     <li class="desktopLinksCont__links__link">
                         <a href="food.html">Food</a>
                     </li>
-                    <li class="desktopLinksCont__links__link">
+                    <li class="desktopLinksCont__links__link active">
                         <a href="ContactUs.html">Contact us</a>
                     </li>
                 </ul>
             </div>    
         </header>
         
+        <!-- Immagini -->
         <div class="imgSection">
+            <img style="width: 100%;" src="main-img/itineraries/itineraries_mainFoto.jpg"  alt="county image">
         </div>
-
+        
         <!-- Main -->
         <div class="main">
-        <!--Descrizione-->
-            <div class="descriptionCont">
-                <h1>Villa Pontappini: beautiful villa in the Tuscan countryside</h1>
-                <p>Welcome to my charming country home, a tranquil and luxurious retreat located just 40 minutes from the airports of Pisa and Florence. This strategic location provides you with the convenience of exploring the cultural gems of Tuscany with ease.</p>
-                <p>In addition to its privileged location, the house is close to some of Italy's most enchanting cities. <br> Pisa, famous for its Leaning Tower, welcomes visitors with its extraordinary historical and artistic heritage.</p>
-                <p>Florence, the city of art and culture, is only a 40-minute drive away. Here, you can immerse yourself in history with the Uffizi Gallery, admire the Duomo, and stroll along the Arno River.</p>
-                <p>Lucca, with its well-preserved medieval walls, offers a unique experience in the heart of Tuscany.</p>
-                <p>Siena, with its Piazza del Campo and Palazzo Pubblico, is another must-visit destination within easy reach. </p>
-                <p>Forte dei Marmi, a renowned seaside resort, offers fine sandy beaches and an elegant holiday atmosphere.</p>
-                <p>The picturesque Volterra, with its Etruscan remains and panoramic views, adds a touch of magic to your stay in the Tuscan countryside.</p>
-                <p>My vacation home is the ideal starting point for exploring all these destinations, providing at the same time a serene and comfortable retreat to relax after a day full of adventures. I look forward to welcoming you and introducing you to the magic of Tuscany!</p>
-                <h2 id="h2Loc">Distances</h2>
-                <p class="pLoc"><strong>Pisa Airport </strong>(PSA) - 55km (34 minutes)</p>
-                <p class="pLoc"><strong>Firenze Airport </strong>(FLR) - 50km (34 minutes)</p>
-                <p class="pLoc"><strong>Bologna Airport </strong>(BLQ) - 132km (1 hour 20 minutes)</p>
-                <p class="pLoc"><strong>Milano Malpensa Airport </strong>(MXP) - 348km (3 hours 39 minutes)</p>
-                <p class="pLoc"><strong>Rome Fiumicino Airport </strong>(FCO) - 356km (3 hours 30 minutes)</p>
-                <p class="pLoc"><strong>Lucca</strong> - 26km (28 minutes)</p>
-                <p class="pLoc"><strong>Firenze</strong> - 53km (42 minutes)</p>
-                <p class="pLoc"><strong>Pisa</strong> - 47km (40 minutes)</p>
-                <p class="pLoc"><strong>Siena</strong> - 122km (1 hour 21 minutes)</p>
-                <p class="pLoc"><strong>Volterra</strong> - 69km (1 hour 17 minutes)</p>
-                <p class="pLoc"><strong>Forte dei marmi</strong> - 55km (41 minutes)</p>
-            </div>
-        
+                <div class="contactUsCont">
+                    <div class="contactUsCont--form">
+                        <h2 class="contactUsCont--form__title">
+                            <span>contact us</span>
+                        </h2>
+                        <p>Dear visitor, for any information regarding Villa Pontappini you can contact us via the form below or via our contact details.</p>
+                        <form action="">
+                            <p>Your name</p>
+                            <input type="text" name="Name" placeholder="Enter your name..." required>
+                            <p>Your email</p>
+                            <input type="email" name="Email" placeholder="Enter your email..." required>
+                            <p>Object</p>
+                            <select name="typeOfRequest">
+                                <option>Reservation</option>
+                                <option>Information request</option>
+                                <option>Other</option>
+                            </select>
+                            <p>Your message</p>
+                            <textarea name="Message" placeholder="Enter your message..." required></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="contactUsCont--social">
+                        <div>
+                            <span>social</span>
+                        </div>
+                    </div>
+                </div>
         </div>
         <!-- Footer-->
         <footer>
@@ -150,6 +157,7 @@
         <i class=" fa fa-chevron-up"></i>
     </div>
    
+    
     <script src="main.js"></script>
 </body>
 </html>
