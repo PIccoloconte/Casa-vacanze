@@ -359,8 +359,8 @@ footer{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 40px;
-    line-height: 40px;
+    width: 50px;
+    line-height: 50px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.437);
     border-radius: 5px;
@@ -393,9 +393,9 @@ footer{
     }
     .itinerariesCont__Box{
         font-family: "Quicksand" , sans-serif;
-        width: 180px;
-        height: 180px;
-        padding: 20px;
+        width: 130px;
+        height: 130px;
+        padding: 30px 0;
         display: flex;
         flex-direction: column;
         text-decoration: none;
@@ -404,7 +404,11 @@ footer{
         border: 0.5px solid rgba(169, 169, 169, 0.62);
         box-shadow: inset 1px 1px 20px lightgray;
         color: black;
+        font-size: 12px;
         
+    }
+    .itinerariesCont__Box > p{
+        display: none;
     }
     .itinerariesCont__Box i{
         color: var(--orangeItem);
@@ -422,8 +426,8 @@ footer{
         position: fixed;
         top: 30px;
         left: 30px;
-        width: 40px;
-        line-height: 40px;
+        width: 50px;
+        line-height: 50px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.437);
         border-radius: 5px;
@@ -507,9 +511,11 @@ footer{
         background: #fff;
         z-index: 0;
     }
+    /*Form*/
     .contactUsCont--form__title + p{
         margin-bottom: 30px;
         font-family: "Roboto" ,sans-serif;
+        font-size: 20px;
     }
     form p{
         font-family: "Cinzel Decorative" , sans-serif;
@@ -533,6 +539,11 @@ footer{
         font-family: "Roboto",sans-serif;
         padding: 10px;
     }
+    form textarea:focus{
+        width: 100%;
+        height: 30vh;
+    }
+
     form > *:focus{
         outline: none;
     }
@@ -542,13 +553,51 @@ footer{
         font-family:"Cinzel Decorative" , sans-serif;
         width: 200px;
         cursor: pointer;
+        margin-bottom: 40px;
+    }
+    /*Details*/
+    .contactUsCont--DS--details{
+        font-family: "Roboto",sans-serif;
+    }
+    .contactUsCont--DS--details > h4,
+    .contactUsCont--DS--details > p
+    {
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .contactUsCont--DS--details p > a{
+        word-wrap: break-word;
+    }
+    .contactUsCont--DS--details p:last-child{
+        margin-bottom: 40px;
     }
 
+    /*Socials*/ 
 
+    .contactUsCont--DS--socials > div{
+        margin: 0 auto;
+        max-width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-
-
-
+    .contactUsCont--DS--socials > div a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:2px solid var(--orangeItem);
+        color: var(--orangeItem);
+        text-decoration: none;
+        font-size: 30px;
+        transition: all 0.5s ease ;
+    }
+    .contactUsCont--DS--socials > div a:hover{
+        background-color: var(--orangeItem);
+        color: #fff;
+    }
 
 @media (min-width : 576px){
     .headerCont{
@@ -559,6 +608,17 @@ footer{
     }
     .imgCont{
         height: 50vh;
+    }
+
+    /*itineraries*/
+    .itinerariesCont__Box{
+        width: 180px;
+        height: 180px;
+        padding: 20px;
+        font-size: 16px
+    }
+    .itinerariesCont__Box > p{ 
+        display: block;
     }
 }
 @media(min-width : 1024px){
@@ -583,5 +643,23 @@ footer{
     .footerCont--bottom__text{
         flex-direction: row;
         justify-content: space-between;
+    }
+    .contactUsCont
+    {
+        flex-direction: row;
+    }
+    .contactUsCont--form{
+        width: 66,66666667;
+        padding: 0 30px;
+    }
+    .contactUsCont--DS{
+        width: 33,33333337;
+        padding: 0 15px;
+    }
+    .btnScrollTop , body .btnBackItineraries{
+        width: 60px;
+        line-height: 60px;
+        border-radius: 10px;
+        font-size: 20px;
     }
 }
