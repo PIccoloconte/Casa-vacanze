@@ -10,6 +10,7 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Villa Pontappini</title>
 </head>
 <body>
@@ -44,13 +45,13 @@
                     <li class="mobile-link ">
                         <a href="location.html">Location</a>
                     </li>
-                    <li class="mobile-link active">
+                    <li class="mobile-link">
                         <a href="itineraries.html">Itineraries</a>
                     </li>
                     <li class="mobile-link">
                         <a href="food.html">Food</a>
                     </li>
-                    <li class="mobile-link">
+                    <li class="mobile-link active">
                         <a href="contactUs.html">Contact us</a>
                     </li>
                 </ul>
@@ -63,13 +64,13 @@
                     <li class="desktop-link">
                         <a href="location.html">Location</a>
                     </li>
-                    <li class="desktop-link active">
+                    <li class="desktop-link">
                         <a href="itineraries.html">Itineraries</a>
                     </li>
                     <li class="desktop-link">
                         <a href="food.html">Food</a>
                     </li>
-                    <li class="desktop-link">
+                    <li class="desktop-link active">
                         <a href="contactUs.html">Contact us</a>
                     </li>
                 </ul>
@@ -78,35 +79,59 @@
         
         <!-- top image-->
         <div class="panoramic-image">
+            <img style="width: 100%;" src="main-img/itineraries/itineraries_mainFoto.jpg"  alt="county image">
         </div>
         
         <!-- Main -->
         <div class="main">
-            <h1 id="title-section">SPORT</h1>
-            <div class="activity-box">
-                <h2>Le Antiche Scuderie</h2>
-                <p> Mobile: <a href="tel:+393292089344"> +39 329 2089344</a></p>
-                <a href="tel:+393292089344"></a>
-                <a href="http://www.leantichescuderie.eu/"><i class="fa fa-info"></i>Website le Antiche Scuderie</a>
-               <a href="https://www.google.com/maps/dir/Localit%C3%A0+Piano,+84,+Altopascio,+LU/Le+Antiche+Scuderie,+Via+Ponte+Monsummano,+Montecatini+Terme,+PT/@43.8426903,10.729471,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132a7c056835c047:0x5c00388f550fef50!2m2!1d10.7202006!2d43.8277101!1m5!1m1!1s0x132a7dc98020c611:0x2bc4fad27ce77125!2m2!1d10.7801227!2d43.8544482!3e0?authuser=0&entry=ttu"><i class="fa fa-map-marker-alt"></i>Le Antiche Scuderie</a>
-                <p>Distances : 9 min - 7,9 km</p>
-            </div>
-            <div class="activity-box">
-                <h2>Corte degli Angeli</h2>
-                <p> Mobile: <a href="tel:+393331408526"> +39 333 1408526</a></p>
-                <a href="tel:+393331408526"></a>
-                <a href="http://www.cortedegliangeli.net/Default.htm"><i class="fa fa-info"></i>Website Corte degli Angeli</a>
-               <a href="https://www.google.com/maps/dir/Localit%C3%A0+Piano,+84,+Altopascio,+LU/Centro+Ippico+Corte+degli+Angeli+A.S.D,+Via+Francesca+Sud+Cintolese,+427,+51015+Monsummano+Terme+PT/@43.8524018,10.7324856,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132a7c056835c047:0x5c00388f550fef50!2m2!1d10.7202006!2d43.8277101!1m5!1m1!1s0x132a631980a89dd3:0x87de3b71168983df!2m2!1d10.8283395!2d43.8425025!3e0?authuser=0&entry=ttu"><i class="fa fa-map-marker-alt"></i>Corte degli angeli</a>
-                <p>Distances : 16 min - 14,6 km</p>
-            </div>
-            <div class="activity-box">
-                <h2>Il Nostro West</h2>
-                <p> Mobile: <a href="tel:+393478599154"> +393478599154</a></p>
-                <a href="tel:+393478599154"></a>
-                <a href="https://www.ilnostrowest.com/"><i class="fa fa-info"></i>Website il Nostro West</a>
-               <a href="https://www.google.com/maps/dir/Localit%C3%A0+Piano,+84,+Altopascio,+LU/Il+Nostro+West,+Via+della+Chiesa+X,+Lucca,+LU/@43.8484756,10.5165811,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132a7c056835c047:0x5c00388f550fef50!2m2!1d10.7202006!2d43.8277101!1m5!1m1!1s0x12d582fdb1471ac1:0x7802d95ecc5f73cd!2m2!1d10.4736859!2d43.8814093!3e0?authuser=0&entry=ttu"><i class="fa fa-map-marker-alt"></i>Il Nostro West</a>
-                <p>Distances : 29 min - 31 km</p>
-            </div>
+                <div class="contactUs-container">
+                    <!--Form-->
+                    <div class="contactUs-form">
+                        <h2 class="form-title">
+                            <span>contact us</span>
+                        </h2>
+                        <p>Dear visitor, for any information regarding Villa Pontappini you can contact us via the form below or via our contact details.</p>
+                        <form action="https://formsubmit.co/c20575188a8ada73df078f2415e18e21" method="POST">
+                            <p>Your name</p>
+                            <input type="text" name="Name" placeholder="Enter your name..." required>
+                            <p>Your email</p>
+                            <input type="email" name="Email" placeholder="Enter your email..." required>
+                            <p>Object</p>
+                            <select name="typeOfRequest">
+                                <option>Reservation</option>
+                                <option>Information request</option>
+                                <option>Other</option>
+                            </select>
+                            <p>Your message</p>
+                            <textarea name="Message" placeholder="Enter your message..." required></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <!-- DS = Details and socials-->
+                    <div>
+                        <div class="contactUs-details">
+                            <h2 class="form-title">
+                                <span>details</span>
+                            </h2>
+                            <h4>Villa Pontappini</h4>
+                            <p>Localita Piano,84</p>
+                            <p>55011 , Altopascio</p>
+                            <p>Lucca - Italy</p>
+                            <p>Mobile: <a class="varColor" href="tel:+393483754620"> +39 348 3754620</a></p>
+                            <p>Email: <a class="varColor" href="mailto:marcocencig97@gmail.com">marcocencig97@gmail.com</a></p>
+                        </div>
+                        <div class="contactUs-socials">
+                            <h2 class="form-title">
+                                <span>socials</span>
+                            </h2>
+                            <div>
+                                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
         <!-- Footer-->
         <footer>
@@ -121,7 +146,7 @@
                     </div>
                     <div class="footer-box">
                         <h2>CONTACT US</h2>
-                        <p> Mobile: <a id="varColor" href="tel:+393483754620"> +39 348 3754620</a></p>
+                        <p> Mobile: <a class="varColor" href="tel:+393483754620"> +39 348 3754620</a></p>
                         <a href="tel:+393483754620"></a>
                     </div>
                     <div class="footer-box">
@@ -146,13 +171,7 @@
             </div>
         </footer>
 
-    </div>
-    <!--back itineraries page btn-->
-    <a href="itineraries.html" class="btnBackItineraries">
-        <i class=" fa fa-chevron-left"></i>
-    </a>
-
-    <!--Privacy modal-->
+        <!--Privacy modal-->
     <dialog id="privacy-modal">
         <h2>Privacy Policy</h2>
         <p>Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your personal data.</p>
@@ -206,12 +225,13 @@
 
 
     <!--scroll top btn-->
+    </div>
+    
     <div class="scroll-top-btn">
         <i class=" fa fa-chevron-up"></i>
     </div>
    
     
     <script src="main.js"></script>
-    <script src="itineraries_.js"></script>
 </body>
 </html>

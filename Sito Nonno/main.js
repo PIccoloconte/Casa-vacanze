@@ -1,7 +1,7 @@
 const menu = document.querySelector(".menu");
 
-const toggleMenu = document.querySelector(".mobileLinksCont");
-const btnScrollTop = document.querySelector(".btnScrollTop");
+const toggleMenu = document.querySelector(".mobile-links-container");
+const btnScrollTop = document.querySelector(".scroll-top-btn");
 
 // Bottone menu
 menu.addEventListener("click",() => {
@@ -34,3 +34,23 @@ const scrollToTop = () => {
     }
 };
 
+
+// Get modal element, open button, close button, and close span
+ const modal = document.getElementById('privacy-modal');
+ const openBtn = document.getElementById('privacyPolice');
+ const closeBtn = document.getElementById('modal-close-btn');
+
+openBtn.addEventListener("click", () => {
+    modal.showModal();
+    modal.scrollTop = 0;
+ })
+
+closeBtn.addEventListener("click", () => {
+    modal.close();
+})
+
+window.addEventListener("click" ,(e)=>{
+    if (e.target === modal) {
+        modal.close();
+    }
+})

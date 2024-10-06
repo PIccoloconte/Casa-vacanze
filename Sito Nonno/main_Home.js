@@ -1,17 +1,17 @@
-const imgCont = document.querySelector(".imgCont");
-const imgArray = document.querySelectorAll(".imgCont__img");
-const rightBtn = document.querySelector(".img_Cont__btn--right");
-const leftBtn = document.querySelector(".img_Cont__btn--left");
-const controlBulletCont = document.querySelector(".controlBulletCont");
+const imageSlider = document.querySelector(".image-slider");
+const imgArray = document.querySelectorAll(".house-image");
+const rightBtn = document.querySelector(".image-btn-right");
+const leftBtn = document.querySelector(".image-btn-left");
+const bulletContainer = document.querySelector(".bullet-container");
 
 /*control Bullet div */
 for(let i = 0; i < imgArray.length ; i++){
     const newControlBullet = document.createElement("div");
-    newControlBullet.classList.add("controlBulletCont__box");
-    newControlBullet.innerHTML = `<div class="controlBulletCont__box__sphere"></div>`
-    controlBulletCont.appendChild(newControlBullet);
+    newControlBullet.classList.add("bullet-box");
+    newControlBullet.innerHTML = `<div class="bullet-sphere"></div>`
+    bulletContainer.appendChild(newControlBullet);
 }
-const controlBulletBoxes = document.querySelectorAll(".controlBulletCont__box");
+const controlBulletBoxes = document.querySelectorAll(".bullet-box");
 controlBulletBoxes.forEach((box,idx) =>{
     box.firstChild.addEventListener("click",(e) =>{
         SetActiveImg(idx);
@@ -79,15 +79,15 @@ function resetInterval() {
   let startingX;
   let movingX;
 
-imgCont.addEventListener("touchstart", e =>{
+imageSlider.addEventListener("touchstart", e =>{
     startingX = e.touches[0].clientX;
 })
 
-imgCont.addEventListener("touchmove",e =>{
+imageSlider.addEventListener("touchmove",e =>{
     movingX = e.touches[0].clientX;
 })
 
-imgCont.addEventListener("touchend",e =>{
+imageSlider.addEventListener("touchend",e =>{
     if(startingX + 100 < movingX){
         activeImg--;
         CheckImgIndex();
